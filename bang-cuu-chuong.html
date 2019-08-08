@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng cửu chương</title>
+</head>
+<body>
+    <script>
+        let multiplication ;
+        multiplication  = "<table border='1' width='700' cellspacing='0' cellpadding=7'>"
+        for (i=2; i<10; i++) {
+            multiplication =multiplication + "<tr>"
+            for (j=1;j<10;j++){
+                product=i*j;
+                multiplication =multiplication + "<td>"+ i+ "x"+ j+ "=" + product + "</td>"
+            }
+            multiplication =multiplication +"</tr>";
+        }
+        multiplication  = multiplication  + "</table>";
+        document.write(multiplication );
+    </script>
+</body>
+</html>
